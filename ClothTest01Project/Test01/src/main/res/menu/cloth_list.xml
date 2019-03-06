@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <item android:id="@+id/action_addCloth"
+        android:title="@string/add_new_cloth"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_addBox"
+        android:title="@string/add_new_box"
+        android:orderInCategory="101"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_addSuit"
+        android:title="@string/add_new_suit"
+        android:orderInCategory="101"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_changeMode"
+        android:title="@string/change_grid_mode"
+        android:orderInCategory="103"
+        app:showAsAction="never" />
+
+</menu>

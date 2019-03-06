@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="waiting_yellow">#ffFEFE05</color>
+    <color name="waiting_blue">#ff2222BC</color>
+    <color name="error_green">#5522AA33</color>
+    <color name="title">#88AAbbCC</color>
+    <color name="description">#FF000000</color>
+    <color name="typeColor">#CCAABBCC</color>
+</resources>

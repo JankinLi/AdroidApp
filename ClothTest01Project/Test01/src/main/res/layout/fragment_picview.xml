@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".PicViewActivity$PlaceholderFragment">
+
+    <TextView
+        android:id="@+id/picture_view_title"
+        android:text="@string/this_picture_is_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/view_title_size"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/title"
+        android:textSize="@dimen/title_font_size"/>
+
+    <ImageView
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/picture_view_title"
+        android:id="@+id/viewPicture"
+        android:src="@drawable/ic_launcher"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:id="@+id/title"
+        android:text="@string/add_new_box_choose_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/title"
+        android:textSize="@dimen/title_font_size"/>
+
+    <Button
+        android:id="@+id/btn_next_step"
+        android:layout_height="50sp"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/next_step_description"/>
+
+    <ImageView
+        android:id="@+id/imageOfBox"
+        android:layout_height="100sp"
+        android:layout_width="100sp"
+        android:layout_below="@id/title"
+        android:layout_marginTop="10sp"
+        android:src="@drawable/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/image_lib_description"
+        android:text="@string/add_new_box_image_lib_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/imageOfBox" />
+
+
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/pic_grid"
+        android:layout_height="fill_parent"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10sp"
+        android:layout_marginBottom="10sp"
+        android:padding="10dp"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:numColumns="auto_fit"
+        android:columnWidth="150dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        android:layout_below="@id/image_lib_description"
+        android:layout_above="@id/btn_next_step"/>
+
+
+</RelativeLayout>

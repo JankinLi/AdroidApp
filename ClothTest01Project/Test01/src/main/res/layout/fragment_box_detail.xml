@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:id="@+id/title"
+        android:text="@string/title_detail_of_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/title"
+        android:textSize="@dimen/title_font_size"/>
+
+    <TextView
+        android:id="@+id/edit_desc"
+        android:text="@string/change_desc_of_box_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/title"/>
+
+    <EditText
+        android:id="@+id/edit_description"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:inputType="text"
+        android:textSize="@dimen/edit_description_font_size"
+        android:lines = "3"
+        android:gravity="top"
+        android:layout_marginTop="5sp"
+        android:layout_below="@id/edit_desc"/>
+
+
+    <ImageView
+        android:id="@+id/imageOfBox"
+        android:layout_height="60sp"
+        android:layout_width="60sp"
+        android:layout_marginTop="10sp"
+        android:src="@drawable/ic_launcher"
+        android:contentDescription="@string/box_image_desc"
+        android:layout_below="@id/edit_description"/>
+
+    <TextView
+        android:id="@+id/image_lib_description"
+        android:text="@string/change_image_of_box_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/imageOfBox" />
+
+
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/pic_grid"
+        android:layout_height="@dimen/image_grid_of_box_height"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10sp"
+        android:layout_marginBottom="10sp"
+        android:padding="10dp"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:numColumns="auto_fit"
+        android:columnWidth="150dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        android:layout_below="@id/image_lib_description"/>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_height="40sp"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/save_data"
+        android:layout_below="@id/pic_grid"/>
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_height="40sp"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/deleteIt"
+        android:layout_below="@id/pic_grid"/>
+
+    <Button
+        android:id="@+id/btn_view_cloth"
+        android:layout_height="40sp"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:text="@string/view_cloth"
+        android:layout_below="@id/pic_grid"/>
+</RelativeLayout>

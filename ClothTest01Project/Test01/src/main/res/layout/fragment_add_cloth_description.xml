@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:id="@+id/title"
+        android:text="@string/add_new_cloth_fill_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/title"
+        android:textSize="@dimen/title_font_size"/>
+
+    <TextView
+        android:id="@+id/choose_your_type"
+        android:text="@string/add_new_cloth_choose_cloth_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:textColor="@color/description"
+        android:textSize="@dimen/description_font_size"
+        android:layout_below="@id/title"/>
+
+    <RadioGroup
+        android:id="@+id/cloth_type_group"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="5sp"
+        android:layout_below="@id/choose_your_type">
+        <RadioButton
+            android:id="@+id/cloth_type_upper"
+            android:layout_height="fill_parent"
+            android:layout_width="wrap_content"
+            android:text="@string/cloth_type_upper_body"
+            android:textSize="@dimen/description_font_size"/>
+        <RadioButton
+            android:id="@+id/cloth_type_lower"
+            android:layout_height="fill_parent"
+            android:layout_width="wrap_content"
+            android:text="@string/cloth_type_lower_body"
+            android:textSize="@dimen/description_font_size"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/input_your_description"
+        android:text="@string/add_new_cloth_input_your_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:textColor="@color/description"
+        android:textSize="@dimen/description_font_size"
+        android:layout_marginTop="10sp"
+        android:layout_below="@id/cloth_type_group"/>
+
+    <Button
+        android:id="@+id/btn_next_step"
+        android:layout_height="40sp"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5sp"
+        android:text="@string/next_step_description"/>
+
+    <EditText
+        android:id="@+id/edit_description"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:textSize="@dimen/description_font_size"
+        android:lines = "10"
+        android:gravity="top"
+        android:layout_marginTop="5sp"
+        android:layout_above="@id/btn_next_step"
+        android:layout_below="@id/input_your_description"/>
+
+</RelativeLayout>
