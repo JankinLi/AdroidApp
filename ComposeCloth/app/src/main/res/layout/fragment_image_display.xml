@@ -1,0 +1,62 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ImageDisplayFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:id ="@+id/detail_image"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="90"
+            android:layout_marginTop="@dimen/eight_dp"
+            android:scaleType="fitCenter"
+            android:contentDescription="@string/image_content_description"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:orientation="horizontal">
+            <RadioGroup
+                android:id="@+id/rg_part"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_up_text" />
+
+            <RadioButton
+                android:id="@+id/rb_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_down_text" />
+            <RadioButton
+                android:id="@+id/rb_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_total_text" />
+            </RadioGroup>
+            <Button
+                android:id="@+id/ok_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_ok"
+                android:layout_marginBottom="@dimen/eight_dp"/>
+            <Button
+                android:id="@+id/back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_back"
+                android:layout_marginBottom="@dimen/eight_dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

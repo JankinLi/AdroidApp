@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">服饰的艺术</string>
+    <string name="welcome_content">欢迎来到服饰的艺术，在这个应用中，你可以挑选你喜欢的服饰。</string>
+    <string name="button_next">下一步</string>
+    <string name="permission_title">权限异常</string>
+    <string name="permission_content">需要用户允许访问外部存储空间的权限。</string>
+    <string name="toast_tip_1">用户拒绝访问相册。</string>
+    <string name="rv_text_error_tip">错误信息。</string>
+    <string name="wait_loading_tip">等待加载...</string>
+    <string name="button_ok">确定</string>
+    <string name="radio_up_text">上部</string>
+    <string name="radio_down_text">下部</string>
+    <string name="radio_total_text">全身</string>
+    <string name="button_back">返回</string>
+    <string name="button_view_tip">查看</string>
+    <string name="cloth_fragment">查看衣服细节</string>
+    <string name="radio_unknown_text">未知</string>
+    <string name="image_content_description">服装图片</string>
+    <string name="button_refresh_tip">刷新</string>
+</resources>

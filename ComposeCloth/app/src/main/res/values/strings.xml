@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Compose Cloth</string>
+    <string name="welcome_content">Welcome you, this APP is a tool for cloth.</string>
+    <string name="button_next">Next</string>
+    <string name="permission_title">Permission necessary</string>
+    <string name="permission_content">External storage permission is necessary.</string>
+    <string name="toast_tip_1">Access Phone Denied</string>
+    <string name="rv_text_error_tip">error info</string>
+    <string name="wait_loading_tip">Wait loading...</string>
+    <string name="button_ok">OK</string>
+    <string name="radio_up_text">UP</string>
+    <string name="radio_down_text">DOWN</string>
+    <string name="radio_total_text">Total</string>
+    <string name="button_back">Back</string>
+    <string name="button_view_tip">View</string>
+    <string name="cloth_fragment">View Cloth</string>
+    <string name="radio_unknown_text">Unknown</string>
+    <string name="image_content_description">Cloth Image</string>
+    <string name="button_refresh_tip">Refresh</string>
+</resources>
